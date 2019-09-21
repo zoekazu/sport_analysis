@@ -1,0 +1,10 @@
+image: python:3
+
+before_script:
+  - pip install -e .[develop]
+
+test:
+  script:
+    - pytest --doctest-modules
+  tags:
+    - sport-analysis
